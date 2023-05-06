@@ -33,4 +33,7 @@ https://user-images.githubusercontent.com/112628197/236635595-3fc70d30-2171-4e0a
 
 https://user-images.githubusercontent.com/112628197/236636344-97b1166d-01d8-429c-bd9b-c33c9f4c82df.mp4
 
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+**_You are free to get in touch with me, @aritzmetic,  or to report problems directly on this repository if you discover problems with the project. Check out our [contribution guidelines](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors) if you are interested in doing more to help the development of the project. Thank you!_** 
 
