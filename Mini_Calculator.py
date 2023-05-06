@@ -18,6 +18,7 @@ def calculator():
 
 # use while loop and try method for calculations
 while True:
+    try:
         # display the operations that the user can use
         print("Press the Letter of operation your choice!")
         print("A for Addition")
@@ -41,8 +42,17 @@ while True:
         # else, Ask for the user's input, and keep going until they provide something that works.
         else:
             print("There is a problem with the operator you entered, possibly due to incorrect capitalisation or invalid operation. Could you just give it another shot?")
+            continue
 
-# ask the user if they want to repeat the process
-# break the loop if they wish to stop the program
-# raise ValueError if they inputted incorrect value
-# Manage runtime exceptions that could arise.
+        # ask the user if they want to repeat the process
+        question = input("Do you wish to make another Calculations? (Y/N): ")
+        # break the loop if they wish to stop the program
+        if question.upper() == "N":
+            print("Thank you for using AritzMetic's Calculator!")
+            break
+        # raise ValueError if they inputted incorrect value
+        elif question.upper() != "Y":
+            raise ValueError("The option you selected is not valid. Please enter 'Y' or 'N'.")
+    # Manage runtime exceptions that could arise.
+    except (ValueError, ZeroDivisionError, TypeError):
+        print("Invalid input. Please enter a valid input.")
