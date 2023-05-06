@@ -35,8 +35,12 @@ while True:
             # if valid, ask the user for first and second numbers
             number_1 = float(input("Type in the first number of what you wish to calculate: "))
             number_2 = float(input("Type in the second number of what you wish to calculate: "))
-# Calculate and dispaly the result
-# else, Ask for the user's input, and keep going until they provide something that works.
+            # Calculate and dispaly the result
+            result = operator_dictionary[user_operation](number_1, number_2)
+            print(f"We appreciate your willingness to wait. The result of your math is {result}!")
+        # else, Ask for the user's input, and keep going until they provide something that works.
+        else:
+            print("There is a problem with the operator you entered, possibly due to incorrect capitalisation or invalid operation. Could you just give it another shot?")
 
 # ask the user if they want to repeat the process
 # break the loop if they wish to stop the program
