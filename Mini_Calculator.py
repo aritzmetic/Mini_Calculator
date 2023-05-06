@@ -20,14 +20,17 @@ def calculator():
 while True:
     try:
         # display the operations that the user can use
-        print("Type the name of the operation your choice!")
-        print("ADD for Addition")
-        print("SUBTRACT for Subtraction")
-        print("MULTIPLY for Multiplication")
-        print("DIVIDE for Division")
+        print("Press the Letter of operation your choice!")
+        print("A for Addition")
+        print("S for Subtraction")
+        print("M for Multiplication")
+        print("D for Division")
+
+        # create dictionary of the correponding function of the operation
+        operator_dictionary = {"A": operator.add, "S": operator.sub, "M": operator.mul, "D": operator.truediv}
+        # ask the user for the operator they want to use
+        user_operation = input("Which of the available operators would you like to make use of?: ")
         
-# create dictionary of the correponding function of the operation
-# ask the user for the operator they want to use
 # check the validity of the operator by using if-else statement
 # if valid, ask the user for first and second numbers
 # Calculate and dispaly the result
