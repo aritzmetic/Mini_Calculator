@@ -10,8 +10,22 @@
 # 7. Use Python Function and appropriate Exceptions to capture errors during runtime.
 
 # Import operator module
+import operator
+
+# Define the calculator method
+def calculator():
+    print("Hi!")
+
 # use while loop and try method for calculations
-# display the operations that the user can use
+while True:
+    try:
+        # display the operations that the user can use
+        print("Type the name of the operation your choice!")
+        print("ADD for Addition")
+        print("SUBTRACT for Subtraction")
+        print("MULTIPLY for Multiplication")
+        print("DIVIDE for Division")
+        
 # create dictionary of the correponding function of the operation
 # ask the user for the operator they want to use
 # check the validity of the operator by using if-else statement
