@@ -18,7 +18,6 @@ def calculator():
 
 # use while loop and try method for calculations
 while True:
-    try:
         # display the operations that the user can use
         print("Press the Letter of operation your choice!")
         print("A for Addition")
@@ -30,9 +29,12 @@ while True:
         operator_dictionary = {"A": operator.add, "S": operator.sub, "M": operator.mul, "D": operator.truediv}
         # ask the user for the operator they want to use
         user_operation = input("Which of the available operators would you like to make use of?: ")
-        
-# check the validity of the operator by using if-else statement
-# if valid, ask the user for first and second numbers
+
+        # check the validity of the operator by using if-else statement
+        if user_operation in operator_dictionary:
+            # if valid, ask the user for first and second numbers
+            number_1 = float(input("Type in the first number of what you wish to calculate: "))
+            number_2 = float(input("Type in the second number of what you wish to calculate: "))
 # Calculate and dispaly the result
 # else, Ask for the user's input, and keep going until they provide something that works.
 
